@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html {
+      font-family: "Fira Sans", sans-serif;
+    }
+    body {
+      margin: 0 0;
+      background-color: dimgrey;
+    }
+    .document {
+      background: url(white-background.jpg);
+      background-size: cover;
+      margin: 0 auto;
+      position: relative;
+      width: 8.5in;
+      height: 11in;
+      overflow: hidden;
+      transform-origin: top var(--transform-mode);
+      transform: scale(var(--document-scale));
+      box-shadow: 0pt 5pt 10pt 5pt #3B425280;
+    }
+    #header {
+      background-color: #5E81AC;
+      color: #ECEFF4;
+      position: absolute;
+      top: 4%;
+      width: 100%;
+      height: 15%;
+      box-shadow: 0pt 5pt 10pt 5pt #3B425280;
+      font-family: "Fira Sans", sans-serif;
+      z-index: 1;
+    }
+    #header h1 {
+      text-align: center;
+      margin: 17pt 0 5pt 0;
+      font-size: 48pt;
+    }
+    #header img {
+      float: left;
+      width: 70pt;
+      height: auto;
+      margin: 8pt -20pt 0 20pt;
+      border: 3pt solid;
+      border-color: #ECEFF4;
+      border-radius: 50%;
+    }
+    .columns {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .columns p {
+      display: inline-flex;
+      flex-direction: row;
+      font-size: 10pt;
+      align-items: center;
+    }
+    .columns p::before{
+      content: "";
+      background-color: white;
+      background-repeat: no-repeat;
+      background-size: 16pt 16pt;
+      width: 16pt;
+      height: 16pt;
+      margin-right: 4pt;
+      border: 2pt solid white;
+      box-sizing: content-box;
+      border-radius: 30pt;
+    }
+    #phone::before {
+      background-image: url('phone.svg');
+    }
+    #github::before {
+      background-image: url('github.svg');
+    }
+    #email::before {
+      background-image: url('email.svg');
+    }
+    #location::before {
+      background-image: url('pin.svg');
+    }
+    #website::before {
+      background-image: url('website.svg');
+    }
+    #main {
+      position: absolute;
+      top: 18%;
+      left: 40%;
+      width: 52%;
+      margin: 15pt;
+    }
+    #main h3 {
+      width: 40%;
+      text-align: center;
+      background-color: #5E81AC;
+      color: #ECEFF4;
+      border-radius: 20pt;
+      padding: 4pt 0 4pt 0;
+      margin: 12pt 0 6pt 0;
+    }
+    #main h4 {
+      margin: 0pt;
+    }
+    #main :is(p,ul) {
+      font-size: 12pt;
+      margin: 4pt 0 4pt 0;
+    }
+    #sidebar {
+      background-color: #2E3440;
+      position: relative;
+      left: 5%;
+      width: 35%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .main-content {
+      padding-left: 10pt;
+    }
+    #sidebar-content {
+      position: relative;
+      top: 19%;
+      margin: 20pt;
+      color: #ECEFF4;
+    }
+    #sidebar-content h3 {
+      text-align: center;
+      border: 2pt solid;
+      border-radius: 20pt;
+      border-color: #5E81AC;
+      padding: 4pt 0 4pt 0;
+      margin: 12pt 0 6pt 0;
+    }
+    #sidebar-content h4 {
+      margin: 10pt 0 5pt 0;
+    }
+    #sidebar-content :is(p,i,ul,li) {
+      font-size: 11pt;
+      margin: 4pt 0 4pt 0;
+    }
+    ul {
+      padding-left: 8pt;
+      list-style-type: "- ";
+    }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      margin: 10pt 0 5pt 0;
+    }
+    a {
+      color: inherit;
+      text-decoration: inherit;
+      position: relative;
+      top: 0;
+      transition: top ease 0.2s;
+    }
+    a:hover {
+      top: -3pt;
+    }
+  </style>
+</head>
+<body>
+  <div class="document">
+    <div id="header">
+      <img src="profile.jpg">
+      <h1>CHRISTOPHER KERNS</h1>
+      <div class="columns">
+        <a href="https://github.com/ctkerns"><p id="github">ctkerns</p></a>
+        <a href="https://ctkerns.github.io"><p
+          id="website">ctkerns.github.io</p></a>
+        <!-- <p id="phone"></p> -->
+        <!-- <a href=""><p -->
+        <!--    id="email"></p></a> -->
+        <!-- <p id="location"></p> -->
+      </div>
+    </div>
+    <div id="sidebar">
+      <div id="sidebar-content">
+        <!-- <h3>About Me</h3> -->
+        <p> Interested in computer graphics and scientific computing. Prefer to
+        work where I can learn from and teach to others. Eagle Scout.</p>
+        <h3>Education</h3>
+        <h4>University of California - Davis</h4>
+        <i>• September 2023 - September 2025</i>
+        <p>M.S. Computer Science</p>
+        <p>GPA: 3.8</p>
+        <p>Coursework:</p>
+        <ul>
+          <li>Computer-Aided Geometric Design</li>
+          <li>Digital Fabrication</li>
+          <li>Program Verification</li>
+        </ul>
+        <h4>University of Central Florida</h4>
+        <i>• August 2017 - May 2021</i>
+        <p>B.S. Computer Science, Math Minor</p>
+        <p>GPA: 3.7</p>
+        <p>Coursework:</p>
+        <ul>
+          <li>Computer Graphics</li>
+          <li>Robot Vision</li>
+        </ul>
+        <h3>Skills</h3>
+        <p><b>Languages:</b> C, C++, Java, Python, Rust</p>
+        <p><b>Development Workflow:</b> Linux, Agile, Git, GitHub, Jira</p>
+        <p><b>Computer Graphics:</b> Autodesk Maya, OpenGL, Unity, Godot</p>
+        <p><b>GPU Programming:</b> CUDA, shaders</p>
+        <p><b>Data and Machine Learning:</b> pandas, Keras, scikit-learn</p>
+      </div>
+    </div>
+    <div id="main">
+      <h3>Work Experience</h3>
+      <div class="main-content">
+        <div class="section-header">
+          <h4>Battelle Savannah River Alliance</h4>
+          <i>June - August 2024</i>
+        </div>
+        <p>DOE-MSIPP Graduate Intern</p>
+        <p>Used python, pandas, numpy, matplotlib, and conda to analyze
+        lightning and electric field data with the goal of improving worker
+        safety. Worked under SRNL Atmospheric Technologies Group.</p>
+        <div class="section-header">
+          <h4>University of California</h4>
+          <i>March 2024 - June 2025</i>
+        </div>
+        <p>Teaching Assistant</p>
+        <p>Held labs and office hours to guide students in Maya and x86
+        assembly programming.</p>
+        <p>Courses Taught:</p>
+        <ul>
+          <li>Fundamentals of Computer Graphics</li>
+          <li>Character Animation</li>
+          <li>Computer Organization and Machine-Dependent Programming</li>
+        </ul>
+        <div class="section-header">
+          <h4>Kelly Education</h4>
+          <i>April - August 2023</i>
+        </div>
+        <p>Substitute Teacher</p>
+      </div>
+      <h3>Projects</h3>
+      <div class="main-content">
+        <div class="section-header">
+          <h4>GPU Fluid Simulation</h4>
+          <i>June 2025 - September 2025</i>
+        </div>
+        <p>Used CUDA and GVDB voxels library to implement a sparse FLIP fluid
+        simulation. Analyzed impact of data structure design on compute and
+        memory efficiency.
+        </p>
+        <div class="section-header">
+          <h4>Plume Ejecta Lunar Tools 2.0 (PELT)</h4>
+          <i>August 2020 - April 2021</i>
+        </div>
+        <p>Sponsored by Florida Space Institute to simulate, render, and
+        communicate the danger of lunar material ejected by landing
+        spacecraft.</p>
+        <p>Used Unity3D, GPGPU programming to develop a hardware accelerated
+        mode of the simulation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    function updateDocumentScale() {
+      const dpr = window.devicePixelRatio || 1;
+
+      const scaleFactor = Math.min(dpr, dpr * window.innerWidth / 8.5 / (96 *
+        dpr));
+
+      var mode;
+      if (scaleFactor > 1) 
+        mode = "center";
+      else
+        mode = "left";
+
+      document.documentElement.style.setProperty('--document-scale',
+        scaleFactor);
+      document.documentElement.style.setProperty('--transform-mode', mode);
+    }
+
+    updateDocumentScale();
+
+    window.addEventListener('resize', updateDocumentScale);
+  </script>
+</body>
