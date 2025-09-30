@@ -1,0 +1,22 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+p {
+  text-align: justify;
+}
+
+.banner {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 760px;
+  box-sizing: border-box;
+  overflow: hidden;
+}

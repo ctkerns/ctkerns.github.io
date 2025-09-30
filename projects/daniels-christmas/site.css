@@ -1,0 +1,134 @@
+html {
+  background: #990000;
+  background-image: url("https://background-tiles.com/overview/red/patterns/large/1028.png");
+  background-size: 15%;
+}
+
+body {
+  font-family: Verdana;
+}
+
+#content {
+  margin-top: 2em;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px 10px 10px;
+  background: #f2eebc;
+  color: #2b0000;
+  background-image: url("http://www.zingerbugimages.com/backgrounds/white_construction_paper_seamless.jpg");
+  background-size: 75%;
+}
+
+a {
+  text-decoration: none;
+  color: #257bb1;
+}
+
+table {
+  width: 100%;
+}
+
+#menu {
+  display: block;
+  overflow: auto;
+}
+
+th {
+  border-left: 1px solid #d96320;
+  border-right: 1px solid #d96320;
+  border-radius: 0px 0px 6px 6px;
+  border-collapse: collapse;
+  background: linear-gradient(0deg, #770000, #bb0000);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  font-family: Arial;
+  margin: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#current {
+  background: linear-gradient(0deg, #aa0000, #ee0000);  
+}
+
+th>a {
+  color: #ffef6c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#current>a {
+  color: #fffd7e;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.banner {
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1.5px solid #d96320;
+}
+
+iframe {
+  width: 420px;
+  height: 236px;
+  max-width: 90%;
+  max-height: 47vw;
+  margin-top: 1em;
+}
+
+p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+h1, h2, h3 {
+  font-family: Arial;
+  margin-top: 1.5em;
+  margin-bottom: 4px;
+}
+
+.article {
+  margin: 0;
+  padding: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.attic-photo {
+  width: 45%;
+  height: auto;
+}
+
+.slide {
+  width: 100%;
+  height: 60vh;
+  object-fit: contain;
+}
+
+.slide-buttons {
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#slide-end {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.player {
+  width: 100%;
+}
+
+.ingredients {
+  list-style-type: disc;
+}
+
+#easter-egg{
+  width: 4em;
+  height: 4em;
+  object-fit: cover;
+}
