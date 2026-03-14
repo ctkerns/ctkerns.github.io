@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Christopher Kerns Resume</title>
@@ -11,10 +12,12 @@
     html {
       font-family: 'Roboto', 'Arial', sans-serif;
     }
+
     body {
       margin: 0 0;
       background-color: dimgrey;
     }
+
     .document {
       background: url(white-background.jpg);
       background-size: cover;
@@ -27,6 +30,7 @@
       transform: scale(var(--document-scale));
       box-shadow: 0pt 5pt 10pt 5pt #3B425280;
     }
+
     #header {
       background-color: #5E81AC;
       color: #ECEFF4;
@@ -37,11 +41,13 @@
       box-shadow: 0pt 5pt 10pt 5pt #3B425280;
       z-index: 1;
     }
+
     #header h1 {
       text-align: center;
       margin: 22pt 0 5pt 0;
       font-size: 46pt;
     }
+
     #header img {
       float: left;
       width: 90pt;
@@ -51,10 +57,12 @@
       border-color: #ECEFF4;
       border-radius: 50%;
     }
+
     .columns {
       display: flex;
       justify-content: space-evenly;
     }
+
     .columns p {
       display: inline-flex;
       flex-direction: row;
@@ -85,9 +93,11 @@
       box-sizing: content-box;
       border-radius: 30pt;
     }
+
     #phone::before {
       background-image: url('phone.svg');
     }
+
     #github::before {
       background-image: url('github.svg');
     }
@@ -99,12 +109,15 @@
     #email::before {
       background-image: url('email.svg');
     }
+
     #location::before {
       background-image: url('pin.svg');
     }
+
     #website::before {
       background-image: url('website.svg');
     }
+
     #main {
       position: absolute;
       top: 18%;
@@ -112,6 +125,7 @@
       width: 52%;
       margin: 15pt;
     }
+
     #main h3 {
       width: 40%;
       text-align: center;
@@ -121,13 +135,16 @@
       padding: 4pt 0 4pt 0;
       margin: 12pt 0 6pt 0;
     }
+
     #main h4 {
       margin: 0pt;
     }
-    #main :is(p,ul) {
+
+    #main :is(p, ul) {
       font-size: 12pt;
       margin: 4pt 0 4pt 0;
     }
+
     #sidebar {
       background-color: #2E3440;
       position: relative;
@@ -136,15 +153,18 @@
       height: 100%;
       overflow: hidden;
     }
+
     .main-content {
       padding-left: 10pt;
     }
+
     #sidebar-content {
       position: relative;
       top: 19%;
       margin: 20pt;
       color: #ECEFF4;
     }
+
     #sidebar-content h3 {
       text-align: center;
       border: 2pt solid;
@@ -153,6 +173,7 @@
       padding: 4pt 0 4pt 0;
       margin: 12pt 0 6pt 0;
     }
+
     #sidebar-content h4 {
       margin: 10pt 0 5pt 0;
     }
@@ -161,15 +182,18 @@
       font-size: 10.5pt;
       margin: 4pt 0 4pt 0;
     }
+
     ul {
       padding-left: 8pt;
       list-style-type: "- ";
     }
+
     .section-header {
       display: flex;
       justify-content: space-between;
       margin: 10pt 0 5pt 0;
     }
+
     a {
       color: inherit;
       text-decoration: inherit;
@@ -177,11 +201,13 @@
       top: 0;
       transition: top ease 0.2s;
     }
+
     a:hover {
       top: -3pt;
     }
   </style>
 </head>
+
 <body>
   <div class="document">
     <div id="header">
@@ -301,7 +327,7 @@
         dpr));
 
       var mode;
-      if (scaleFactor > 1) 
+      if (scaleFactor > 1)
         mode = "center";
       else
         mode = "left";
