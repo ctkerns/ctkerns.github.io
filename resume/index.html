@@ -39,21 +39,19 @@
     }
     #header h1 {
       text-align: center;
-      margin: 17pt 0 5pt 0;
-      font-size: 48pt;
+      margin: 22pt 0 5pt 0;
+      font-size: 46pt;
     }
     #header img {
       float: left;
-      width: 70pt;
+      width: 90pt;
       height: auto;
-      margin: 8pt -20pt 0 20pt;
+      margin: 10pt 0pt 0 20pt;
       border: 3pt solid;
       border-color: #ECEFF4;
       border-radius: 50%;
     }
     .columns {
-      position: absolute;
-      width: 100%;
       display: flex;
       justify-content: space-evenly;
     }
@@ -63,7 +61,19 @@
       font-size: 10pt;
       align-items: center;
     }
-    .columns p::before{
+
+    @media print {
+      .columns {
+        position: absolute;
+        width: 100%;
+      }
+
+      #header img {
+        width: 70pt;
+      }
+    }
+
+    .columns p::before {
       content: "";
       background-color: white;
       background-repeat: no-repeat;
@@ -146,8 +156,9 @@
     #sidebar-content h4 {
       margin: 10pt 0 5pt 0;
     }
-    #sidebar-content :is(p,i,ul,li) {
-      font-size: 11pt;
+
+    #sidebar-content :is(p, i, ul, li) {
+      font-size: 10.5pt;
       margin: 4pt 0 4pt 0;
     }
     ul {
