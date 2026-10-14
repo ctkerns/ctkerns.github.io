@@ -210,7 +210,7 @@
       font-size: 10pt;
     }
 
-    a > i {
+    a>i {
       color: #5E81AC;
     }
   </style>
@@ -237,7 +237,7 @@
         <!-- <a href=""> -->
         <!--   <p id="email"></p> -->
         <!-- </a> -->
-        <p id="location">Davis, CA</p>
+        <p id="location">Oakland, CA</p>
       </div>
     </div>
     <div id="sidebar">
@@ -272,7 +272,7 @@
         <h3>Skills</h3>
         <p><b>Languages:</b> C, C++, Java, Python, Rust, JavaScript, TypeScript</p>
         <p><b>Development Workflow:</b> Linux, Agile, Git, GitHub Actions,
-            Linear, Jira</p>
+          Linear, Jira</p>
         <p><b>Computer Graphics:</b> Autodesk Maya, OpenGL, Unity, Godot, CUDA,
           Blender</p>
         <p><b>Fullstack</b>: PostgreSQL, Redis, Flask, React, NextJS</p>
@@ -288,13 +288,13 @@
         </div>
         <p>Fullstack Software Engineer</p>
         <p>
-            Improved reliability by organizing sprints to close the loop on
-            testing and CI.
-            Built an incident response system and management policy from zero.
-            Took leadership of stand up meetings and ticket assignment across
-            three countries and two languages.
-            Led implementation of an improved onboarding flow, taking new user
-            activation from 12 to 39%.
+          Improved reliability by organizing sprints to close the loop on
+          testing and CI.
+          Built an incident response system and management policy from zero.
+          Took leadership of stand up meetings and ticket assignment across
+          three countries and two languages.
+          Led implementation of an improved onboarding flow, taking new user
+          activation from 12 to 39%.
         </p>
         <div class="section-header">
           <h4>Savannah River National Laboratory</h4>
@@ -305,7 +305,7 @@
           storm with a 0% false positive rate over measured data, allowing for
           a return to operations two hours after a storm with a high degree of
           confidence in worker safety.</p>
-          <a id="pub-link" href="https://www.osti.gov/biblio/3685158">Publication: <i>Developing a
+        <a id="pub-link" href="https://www.osti.gov/biblio/3685158">Publication: <i>Developing a
             Lightning All-Clear Signal for the Savannah River
             Site</i> https://www.osti.gov/biblio/3685158</a>
         <div class="section-header">
@@ -321,7 +321,7 @@
         </div>
         <p>Substitute Teacher</p>
         <p>Helped middle and high school students with assignments in English
-            and other subjects.</p>
+          and other subjects.</p>
       </div>
       <h3>Projects</h3>
       <div class="main-content">
@@ -347,10 +347,7 @@
   </div>
   <script>
     function updateDocumentScale() {
-      const dpr = window.devicePixelRatio || 1;
-
-      const scaleFactor = Math.min(dpr, dpr * window.innerWidth / 8.5 / (96 *
-        dpr));
+      const scaleFactor = Math.min(1, window.innerWidth / (8.5 * 96));
 
       var mode;
       if (scaleFactor > 1)
