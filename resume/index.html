@@ -35,7 +35,7 @@
       background-color: #5E81AC;
       color: #ECEFF4;
       position: absolute;
-      top: 4%;
+      top: 0%;
       width: 100%;
       height: 15%;
       box-shadow: 0pt 5pt 10pt 5pt #3B425280;
@@ -120,9 +120,9 @@
 
     #main {
       position: absolute;
-      top: 18%;
-      left: 40%;
-      width: 52%;
+      top: 14%;
+      left: 34%;
+      width: 60%;
       margin: 15pt;
     }
 
@@ -141,14 +141,14 @@
     }
 
     #main :is(p, ul) {
-      font-size: 12pt;
+      font-size: 11pt;
       margin: 4pt 0 4pt 0;
     }
 
     #sidebar {
       background-color: #2E3440;
       position: relative;
-      left: 5%;
+      left: 0%;
       width: 35%;
       height: 100%;
       overflow: hidden;
@@ -160,7 +160,7 @@
 
     #sidebar-content {
       position: relative;
-      top: 19%;
+      top: 15%;
       margin: 20pt;
       color: #ECEFF4;
     }
@@ -205,6 +205,14 @@
     a:hover {
       top: -3pt;
     }
+
+    #pub-link {
+      font-size: 10pt;
+    }
+
+    a > i {
+      color: #5E81AC;
+    }
   </style>
 </head>
 
@@ -234,8 +242,10 @@
     </div>
     <div id="sidebar">
       <div id="sidebar-content">
-        <p>Developer interested in computer graphics, computational geometry,
-          and scientific computing. Masterful at both learning complex concepts
+        <p>
+          Software Engineer with a background in computer graphics, artificial
+          intelligence, computational gemoetry, and scientific computing.
+          Masterful at both learning complex concepts
           with strong research methodologies and sharing knowledge with clear
           guidance. Experienced community leader and volunteer, Eagle
           Scout.</p>
@@ -260,24 +270,44 @@
           <li>Robot Vision</li>
         </ul>
         <h3>Skills</h3>
-        <p><b>Languages:</b> C, C++, Java, Python, Rust</p>
-        <p><b>Development Workflow:</b> Linux, Agile, Git, GitHub, Jira</p>
-        <p><b>Computer Graphics:</b> Autodesk Maya, OpenGL, Unity, Godot</p>
-        <p><b>GPU Programming:</b> CUDA, shaders</p>
-        <p><b>Data and Machine Learning:</b> pandas, Keras, scikit-learn</p>
+        <p><b>Languages:</b> C, C++, Java, Python, Rust, JavaScript, TypeScript</p>
+        <p><b>Development Workflow:</b> Linux, Agile, Git, GitHub Actions,
+            Linear, Jira</p>
+        <p><b>Computer Graphics:</b> Autodesk Maya, OpenGL, Unity, Godot, CUDA,
+          Blender</p>
+        <p><b>Fullstack</b>: PostgreSQL, Redis, Flask, React, NextJS</p>
+        <p><b>Data and AI/ML:</b> pandas, LangGraph, Keras, scikit-learn</p>
       </div>
     </div>
     <div id="main">
       <h3>Work Experience</h3>
       <div class="main-content">
         <div class="section-header">
+          <h4>AdsGency AI</h4>
+          <i>June - Current</i>
+        </div>
+        <p>Fullstack Software Engineer</p>
+        <p>
+            Improved reliability by organizing sprints to close the loop on
+            testing and CI.
+            Built an incident response system and management policy from zero.
+            Took leadership of stand up meetings and ticket assignment across
+            three countries and two languages.
+            Led implementation of an improved onboarding flow, taking new user
+            activation from 12 to 39%.
+        </p>
+        <div class="section-header">
           <h4>Savannah River National Laboratory</h4>
           <i>June - August 2024</i>
         </div>
         <p>DOE-MSIPP Graduate Intern</p>
-        <p>Used python, pandas, numpy, matplotlib, and conda to analyze
-          lightning and electric field data with the goal of improving worker
-          safety. Worked under SRNL Atmospheric Technologies Group.</p>
+        <p>Analyzed EFM data to discover an all-clear signal after a lightning
+          storm with a 0% false positive rate over measured data, allowing for
+          a return to operations two hours after a storm with a high degree of
+          confidence in worker safety.</p>
+          <a id="pub-link" href="https://www.osti.gov/biblio/3685158">Publication: <i>Developing a
+            Lightning All-Clear Signal for the Savannah River
+            Site</i> https://www.osti.gov/biblio/3685158</a>
         <div class="section-header">
           <h4>University of California</h4>
           <i>March 2024 - June 2025</i>
@@ -285,17 +315,13 @@
         <p>Teaching Assistant</p>
         <p>Held labs and office hours to guide students in Maya and x86
           assembly programming.</p>
-        <p>Courses Taught:</p>
-        <ul>
-          <li>Fundamentals of Computer Graphics</li>
-          <li>Character Animation</li>
-          <li>Computer Organization and Machine-Dependent Programming</li>
-        </ul>
         <div class="section-header">
           <h4>Kelly Education</h4>
           <i>April - August 2023</i>
         </div>
         <p>Substitute Teacher</p>
+        <p>Helped middle and high school students with assignments in English
+            and other subjects.</p>
       </div>
       <h3>Projects</h3>
       <div class="main-content">
